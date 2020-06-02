@@ -35,7 +35,7 @@
         if($uploadStatus == 1){ 
             $db= new DbHandler();
 
-            $sql = "INSERT INTO mma (name,age,catInfo,wins,loss,image) VALUES ('".$name."','".$age."','".$catInfo."','".$wins."','".$loss."','".$fileName."')"; 
+            $sql = "INSERT INTO mma (name,age,catinfo,wins,loss,image) VALUES ('".$name."','".$age."','".$catInfo."','".$wins."','".$loss."','".$fileName."')"; 
 
             $db->insert($sql);
 

@@ -16,7 +16,7 @@ $id = $_SESSION["id"];
 
 $sql = "UPDATE mma SET name= '".$name."',
         age= '".$age."',
-        catInfo= '".$catInfo."',
+        catinfo= '".$catInfo."',
         wins= '".$wins."',
         loss= '".$loss."'
         WHERE id='".$id."'";
