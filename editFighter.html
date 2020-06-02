@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 1</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <h1 style="text-align: center;">Update fighter</h1>
+                <form role="Form" method="post" id="form" action="backend/updateCat.php" accept-charset="UTF-8">
+                    <div class="form-group">
+                        <label for="catName">Cat name</label>
+                        <input id="name" type="text" class="form-control" placeholder="Name" name="name" aria-describedby="basic-addon1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="catAge">Cat age</label>
+                        <input id="age" type="text" class="form-control" placeholder="Age" name="age" aria-describedby="basic-addon1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="catInfo">Cat info</label>
+                        <input id="info" type="text" class="form-control" placeholder="Info" name="catInfo" aria-describedby="basic-addon1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="catRecord" >Cat record</label>
+                        <div class="record-wrapper" style="display: flex; align-items: center;">
+                            <label for="carWins" style="margin-right: 15px;" >Wins: </label>
+                            <input type="text" id="wins" class="form-control col-md-2" name="wins" style="margin-right: 20px;" placeholder="Wins"  aria-describedby="basic-addon1" required>
+                            <label for="catLoss" style="margin-right: 15px;">Loss: </label>
+                            <input type="text" id="loss" class="form-control col-md-2" name="loss" placeholder="Loss"  aria-describedby="basic-addon1" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="chooseimage">Cat image</label>
+                        <input id="image" type="file" style="display: block;" name="file">
+                    </div>
+                    <div style="display: flex;">
+                        <button  id="update" class="btn btn-success" style="margin:auto; display:block;">Update</button>
+                        <button  id="delete" class="btn btn-danger" style="margin:auto; display:block;">Delete</button>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script src="./src/editFighter.js"></script>
+</body>
+</html>
