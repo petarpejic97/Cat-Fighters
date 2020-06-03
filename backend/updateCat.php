@@ -13,7 +13,7 @@ $catInfo = $_POST['catInfo'];
 $wins = $_POST['wins'];
 $loss = $_POST['loss'];
 $id = $_SESSION["id"];
-
+//koristi se ranije spremljeni id u sessiji te updatamo podatke uz pomoć njega
 $sql = "UPDATE mma SET name= '".$name."',
         age= '".$age."',
         catinfo= '".$catInfo."',

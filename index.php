@@ -43,7 +43,9 @@
                         include_once "./DbHandler.php";
                         use db\DbHandler as handler;
                         error_reporting(E_ERROR | E_PARSE);
-                        
+                        //php skripta za kreiranje html elementa koji sadrže informacije o određenoj mački
+                        //prolazi koz cijelu tablicu i za sve malke radi objekte 
+                        //kreira se data-info u koji se sprema JSON objekt
                         $db = new handler();
                         $sql = "SELECT * FROM mma";
                         $result = $db->select($sql);

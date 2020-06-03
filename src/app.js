@@ -227,9 +227,6 @@ function saveFighterObject(leftId,rightId){
 function doCalculation(left,right){
     let winpercentleft = (left.record.wins/(left.record.wins + left.record.loss))*100
     let winpercentright = (right.record.wins/(right.record.wins + right.record.loss))*100
-
-    console.log("Lijevi: " + winpercentleft)
-    console.log("Desni: " +winpercentright)
     determineWinner(winpercentleft,winpercentright)
 }
 function determineWinner(winpercentleft,winpercentright){
@@ -328,6 +325,7 @@ function  incrementLoserScore(idLoser,sideLoser){
     } 
 }
 function loadChangeInDatabase(idWinner,idLoser){
+    //pozivanje php skripte za inkrementiranje pobjeda odnosno poraza
     $.ajax({
         type: 'POST',
         url: './backend/updateScore.php',
