@@ -104,7 +104,7 @@
                                 $cat->id = $row["id"];
                                 $cat->name = $row["name"];
                                 $cat->age = $row["age"];
-                                $cat->catInfo = $row["catInfo"];
+                                $cat->catInfo = $row["catinfo"];
                                 $cat->record->wins = $row["wins"];
                                 $cat->record->loss = $row["loss"];
                                 echo '<div class="col-md-4 mb-1">';

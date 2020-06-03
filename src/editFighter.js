@@ -31,8 +31,8 @@ function onBtnDelete(id){
             type: 'POST',
             url: './backend/delete.php',
             data :{id:id},
-            success: function(response){    
-                window.location="./index.php"
+            success: function(response){ 
+               window.location="./index.php"
             }
         })  
       });
